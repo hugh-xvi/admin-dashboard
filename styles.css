@@ -1,0 +1,24 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    border: 1px solid blue;
+}
+.sidebar{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:6;
+}
+.header{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+.article{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:2;
+    grid-row-end:6;
+}
