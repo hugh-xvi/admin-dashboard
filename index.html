@@ -1,136 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Odin Sign-up</title>
+    <script src="https://kit.fontawesome.com/84db657d3c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Odin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Header Logo</div>
-                <ul>
-                    <li> Home </li>
-                    <li> Profile </li>
-                    <li> Messages </li>
-                    <li> History </li>
-                    <li> Tasks </li>
-                    <li> Communities </li>
-                </ul>
-                <ul>
-                    <li> Settings </li>
-                    <li> Supports </li>
-                    <li> Privacy </li>
-                </ul>
-
+            <div class="logo">
+                <i class="fa-solid fa-border-all fa-2xl"></i>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-house"></i>
+                <h3>Home</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-regular fa-address-card"></i>
+                <h3>Profile</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-message"></i>
+                <h3>Messages</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-clock"></i>
+                <h3>History</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-file"></i>
+                <h3>Tasks</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-user-group"></i>
+                <h3>Communities</h3>
+            </div>
+            <br>
+            <br>
+            <div class="dbButton">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Settings</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-circle-question"></i>
+                <h3>Support</h3>
+            </div>
+            <div class="dbButton">
+                <i class="fa-solid fa-check"></i>
+                <h3>Privacy</h3>
+            </div>
         </div>
         <div class="header">
-            <div class="header-top">
-                <div class="top-left">
-                    <button> Hello </button>
+            <div class="upperHeader">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    <input type="text" id="searchBar">
                 </div>
-                <div class="top-right">
-                    Morgan Oakley
-                </div>
-                <div class="bottom-left">
-                    Hi there Morgan Oakley (@morgan)
-                </div>
-                <div class="bottom-right">
-                    <button> New </button>
-                    <button> Upload </button>
-                    <button> Share </button>
+                <div class="profileSection">
+                    <i class="fa-solid fa-bell fa-xl"></i>
+                    <img src="images/cat.jpg" alt="" class="profile1">
+                    <h3>Morgan Oakley</h3>
                 </div>
             </div>
-            <div class="header-bottom">
-
+            <div class="lowerHeader">
+                <div class="id">
+                    <img src="images/cat.jpg" alt="" class="headerPFP">
+                    <div class="names">
+                        <h5 class="m-0">Hi there,</h5>
+                        <h3 class="m-0">Morgan Oakley (@morgan)</h3>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="headerButton"><strong>New</strong></button>
+                    <button class="headerButton"><strong>Upload</strong></button>
+                    <button class="headerButton"><strong>Share</strong></button>
+                </div>
             </div>
-
         </div>
-        <div class="article">
+        <div class="main-content">
             <div class="projects">
-                <p> Your Projects</p>
-                <div class="project1">
-                    <p> Super Cool Project</p>
-                    Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
-                    facilisis felis accumsan nec.
+                <h4>Your Projects</h4>
+            <div class="project-cards">
+                <div class="projectCard smooth block">
+                    <h4>Super Cool Project</h4>
+                    <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                        facilisis felis accumsan nec.</p>
+                    <div class="cardButtons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-                <div class="project2">
-                    <p> Less Cool Project </p>
-                    Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius
-                    pellentesque lacus.
-                    
+                <div class="projectCard smooth block">
+                    <h4>Less Cool Project</h4>
+                    <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius
+                        pellentesque lacus.</p> 
+                    <div class="cardButtons"> 
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-                <div class="project3">
-                    <p>Impossible App</p>
-                    In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
-                    id.
-                    
+                <div class="projectCard smooth block">
+                    <h4>Impossible App</h4>
+                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
+                        id.</p>
+                    <div class="cardButtons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-                <div class="project4">
-                    <p> Easy Peasy App </p>
-                    Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
-                    commodo, ac bibendum magna tincidunt.
-                    
+                <div class="projectCard smooth block">
+                    <h4>Easy Peasy App</h4>
+                    <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                        commodo, ac bibendum magna tincidunt.</p>
+                    <div class="cardButtons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-                <div class="project5">
-                    <p> Ad Blocker </p>
-                    Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada
-                    eros.
-                    
+                <div class="projectCard smooth block">
+                    <h4>Ad blocker</h4>
+                    <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada
+                        eros.</p>
+                    <div class="cardButtons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-                <div class="project6">
-                    <p> Monkey Maker</p>
-                    Present convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
-                    scelerisque tortor purus sit amet ex.
-                    Pellentesque mollis nec sem vel aliquam.
-                    
+                <div class="projectCard smooth block">
+                    <h4>Money Maker</h4>
+                    <p>Present convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
+                        scelerisque tortor purus sit amet ex.
+                        Pellentesque mollis nec sem vel aliquam.</p>
+                    <div class="cardButtons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
                 </div>
-
+            </div>
             </div>
             <div class="announcements">
-                <p> Announcements</p>
-                <div class="announcements-first">
-                    <p>Site Maintenance</p>
-                    Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec
-                    hendrerit sodales congue…
-
-                </div>
-                <div class="announcements-sec">
-                    <p> Community Share Day</p>
-                    Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
-                    accumsan porttitor..
-                    
-                </div>
-                <div class="announcements-third">
-                    <p> Updated Privacy Policy</p>
-                    Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in
-                    mattis...
-                    
+                <h4>Announcements</h4>
+                <div class="block smooth">
+                    <div class="announce">
+                        <h5>Site Maintenance</h5>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec
+                            hendrerit sodales congue…</p>
+                    </div>
+                    <hr>
+                    <div class="announce">
+                        <h5>Community Share Day</h5>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                            accumsan porttitor..</p>
+                    </div>
+                    <hr>
+                    <div class="announce">
+                        <h5>Updated Privacy Policy</h5>
+                        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in
+                            mattis...</p>
+                    </div>
                 </div>
             </div>
-            <div class=" trending">
-                <p> Trending</p>
-                <div class="person1">
-                    <p>@tegan</p>
-                        World Peace Builder
+            <div class="trending">
+                <h4>Trending</h4>
+                <div class="block smooth">
+                    <div class="trend">
+                        <img src="images/cat.jpg" alt="" class="profile">
+                        <div class="trendPerson">
+                            <p class="tag"><strong>@tegan</strong></p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img src="images/cat.jpg" alt="" class="profile">
+                        <div class="trendPerson">
+                            <p class="tag"><strong>@tegan</strong></p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img src="images/cat.jpg" alt="" class="profile">
+                        <div class="trendPerson">
+                            <p class="tag"><strong>@tegan</strong></p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img src="images/cat.jpg" alt="" class="profile">
+                        <div class="trendPerson">
+                            <p class="tag"><strong>@tegan</strong></p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="person2">
-                    <p>@morgan</p>
-                        Super Cool Project
-                </div>
-                <div class="person3">
-                    <p>@kendall</p>
-                        Life Changing App
-                </div>
-                <div class="person4">
-                    <p>@alex</p>
-                        No Traffic Maker
-                </div>
-                
             </div>
         </div>
     </div>
 </body>
+</html>
